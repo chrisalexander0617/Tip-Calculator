@@ -4,6 +4,7 @@ document.getElementById('button').onclick = function total(){
   var rten = (Number(billTotal) + (Number(billTotal) * .1));
   var rfifteen = (Number(billTotal) + (Number(billTotal) * .15));
   var rtwenty = (Number(billTotal) + (Number(billTotal) * .2));
+  
   var ten = document.getElementById('ten').innerHTML = rten.toFixed(2);
   var fifteen = document.getElementById('fifteen').innerHTML = rfifteen.toFixed(2);
   var twenty = document.getElementById('twenty').innerHTML = rtwenty.toFixed(2);
@@ -12,6 +13,3 @@ document.getElementById('button').onclick = function total(){
 
 
 
-
-//var num = 5.56789;
-//var n = num.toFixed(2);
