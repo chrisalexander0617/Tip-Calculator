@@ -62,6 +62,7 @@ body {
     border:none;
     box-sizing:border-box;
     height: 50px;
+    bacground:#fff;
     }
   #button:hover {
     cursor:pointer;
