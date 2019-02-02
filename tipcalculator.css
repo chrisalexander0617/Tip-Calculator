@@ -8,25 +8,28 @@ body {
     font-family:roboto;
     text-align:center;
     padding-top:70px;
-    background-color:#c6ed84;
+    background-color:#0cca91;
     text-transform: uppercase;
   }
   .container {
     margin:0 auto;
-    background-color:#849e91;
+    background-color:#ffffff;
     width:65%;
-    max-width: 250px;
-    box-shadow: black 0 0 6px 1px;
+    max-width: 400px;
+    
     border-radius:0px;
-    color:white;
+    color:rgb(0, 0, 0);
     box-sizing:border-box;
-    height:300px;
+    height:500px;
     margin-bottom:200px;
+    -webkit-box-shadow: 0px 48px 39px -40px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 48px 39px -40px rgba(0,0,0,0.51);
+    box-shadow: 0px 48px 39px -40px rgba(0,0,0,0.51);
     }
   .title {
     margin:0 auto;
     text-align:center;
-    background-color:#849e91;
+    background-color:#00942c;
     color:white;
     font-size:27px;
     width:100%;
@@ -35,7 +38,7 @@ body {
     border-bottom: solid 1px lightgray;
     }
   #total {
-    text-align:right;
+    text-align:center;
     font-size: 20px;
     width:100%;
     border:none;
@@ -45,7 +48,7 @@ body {
   }
   #total:focus {
     outline:none;
-    background-color: gainsboro;
+    background-color: rgb(230, 230, 230);
   }
   #total::placeholder{
     opacity: .4;;
@@ -55,36 +58,45 @@ body {
     border:none;
     font-size:15px;
     transition: .1s ease-in-out;
-    width: 100%;
+    width: 50%;
     font-weight: 100;
     border-top: solid grey 1px;
     border-bottom: solid grey 1px;
     border:none;
     box-sizing:border-box;
     height: 50px;
-    bacground:#fff;
+    background:#0cca91;
     }
   #button:hover {
     cursor:pointer;
-    color:#849e91;
+    color:#2e2e2e;
     }
   #button:focus{
       outline:none;
+    }
+
+    #button:active 
+    {
+      background:black;
+      color:white;
     }
   .result {
     display: inline;
     
   }
-  .result input {
+  .result select 
+  {
    float: left;
-   text-align:right;
+   text-align:center;
    width:100%;
    padding:7px;
    border:none;
    font-size:20px;
    border-bottom: solid grey 1px;
    height: 50px;
-  }
+   outline:none;
+  margin-bottom:120px; 
+ }
 .result input::placeholder{
   opacity:.4;
   }
@@ -97,7 +109,8 @@ body {
 
 }
 .result-display h1 {
-  font-weight: 100;
+  font-weight:300;
+  font-size: 50px;
   
 }
 footer {
@@ -105,4 +118,16 @@ footer {
   opacity: 0.6;
   font-size:14px;
 
+}
+
+
+@media only screen and (max-width: 600px) {
+  body
+  {
+    padding-top:0px;
+  }
+  .container 
+  {
+    width:100%;
+  }
 }

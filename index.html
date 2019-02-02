@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" href="tipcalculator.css">
     <title>Tip Calcultor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     
@@ -19,19 +20,28 @@
         <div class='percent-class'>
           
           <div class='number'>
-            <input id='number-input' type="number" placeholder='%' min='0'>
+            <!--<input id='number-input' type="number" placeholder='%' min='0'>-->
+            <select name="dropdown" id="dropdown">
+              <option value = "0">How was your service?</option>
+              <option value="0">0% - Terrible </option>
+              <option value="10">10% - Decent</option>
+              <option value="15">15% - Good</option>
+              <option value="20">20% - Great</option>
+              <option value="30">30% - Outstanding</option>
+            </select>
           </div>
         
         </div>
       
       </div>
-     
+
+      <div class='result-display'>
+          <h1 id='result'>$0.00</h1>
+        </div>
      
         <button id='button'>SUBMIT</button>
 
-       <div class='result-display'>
-         <h1 id='result'>$0.00</h1>
-       </div>
+    
        
 
         
